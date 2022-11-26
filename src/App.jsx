@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Card, Flex, Block, Text, BadgeDelta, ProgressBar, Metric } from '@tremor/react';
 import reactLogo from './assets/react.svg'
 import './App.css'
 
@@ -27,6 +28,20 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Card maxWidth="max-w-lg">
+        <Flex alignItems="items-start">
+          <Block>
+            <Text>Sales</Text>
+            <Metric>$ 20,699</Metric>
+          </Block>
+          <BadgeDelta deltaType="moderateDecrease" text="13.2%" />
+        </Flex>
+        <Flex marginTop="mt-4">
+          <Text truncate={true}>50% ($ 110,250)</Text>
+          <Text> $ 220,500 </Text>
+        </Flex>
+        <ProgressBar percentageValue={50} marginTop="mt-2" />
+      </Card>
     </div>
   )
 }
