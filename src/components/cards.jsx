@@ -58,12 +58,6 @@ export default function Cards() {
               </Card>
             ))}
          </ColGrid>
-
-         <Block marginTop="mt-6">
-            <Card>
-               <div className="h-80" />
-            </Card>
-         </Block>
          </div>
   );
 }
